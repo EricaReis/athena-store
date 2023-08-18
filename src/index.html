@@ -29,7 +29,9 @@
 
   <body>
     <header>
-      <img src="./assets/logo.png" alt="logo" />
+      <a href="#home">
+        <img src="./assets/logo.png" alt="logo" />
+      </a>
 
       <div class="menu">
         <ul>
@@ -38,21 +40,24 @@
           <li><a href="#about">About</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#sale">PointOfSale</a></li>
+
           <i class="fa-solid fa-cart-shopping"></i>
         </ul>
       </div>
     </header>
 
+    <!-- Image Carousel -->
     <main id="home">
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <h1>New Clothing Collection</h1>
 
-            <button type="button">sdasd</button>
+            <button class="default-button" type="button">Shop Now</button>
 
             <img src="./assets/header.png" alt="logo" />
           </div>
+
           <div class="swiper-slide">
             <img src="./assets/header2.png" alt="logo" />
           </div>
@@ -65,6 +70,42 @@
         <div class="swiper-button-next"></div>
       </div>
     </main>
+
+    <!-- New Arrivals -->
+    <section class="container new-arrivals">
+      <h2>NEW ARRIVALS</h2>
+
+      <div class="container three-columns">
+        <div class="product">
+          <img class="product-image" src="./assets/product.png" alt="product" />
+
+          <div class="product-info">
+            <p class="product-name">Product Name</p>
+            <p class="product-price">Product Price</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img class="product-image" src="./assets/product.png" alt="product" />
+
+          <div class="product-info">
+            <p class="product-name">Product Name</p>
+            <p class="product-price">Product Price</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img class="product-image" src="./assets/product.png" alt="product" />
+
+          <div class="product-info">
+            <p class="product-name">Product Name</p>
+            <p class="product-price">Product Price</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="default-button" type="button">View More</button>
+    </section>
 
     <script src="./main.js"></script>
   </body>

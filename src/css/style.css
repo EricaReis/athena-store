@@ -7,9 +7,15 @@
 
 h1 {
   font-family: 'Roboto', sans-serif;
+  font-size: 48px;
   font-weight: 700;
-  letter-spacing: 11.28px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
+  font-weight: 500;
+  padding: 4rem;
 }
 
 header {
@@ -43,6 +49,11 @@ header .menu a {
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+header .menu a:hover {
+  color: #808080;
 }
 
 .swiper {
@@ -58,3 +69,69 @@ header .menu a {
   color: #000;
 }
 
+i{
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+i:hover{
+  color: #808080;
+}
+
+.default-button {
+  width: fit-content;
+  border: 4px solid #000;
+  border-radius: 36px;
+  padding: 1rem 3rem;
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.default-button:hover {
+  color: #808080;
+  border: 4px solid #808080;
+}
+
+.new-arrivals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(222, 215, 215, 0.41);
+}
+
+.three-columns {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.product {
+  background-color: #FFFFFF;
+}
+
+.product-image {
+  padding: 0.4rem;
+}
+
+.product-info {
+  padding: 1rem 0 2rem 0;
+}
+
+.product-name {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.product-price {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 300;
+}
