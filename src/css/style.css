@@ -112,6 +112,12 @@ i:hover{
   background-color: rgba(222, 215, 215, 0.41);
 }
 
+.categories {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 2rem 0;
+}
+
 .three-columns {
   display: flex;
   width: 80%;
@@ -120,8 +126,26 @@ i:hover{
   align-self: center;
 }
 
+.about-us {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0 5rem 0;
+}
+
+.two-columns {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .product {
   background-color: #FFFFFF;
+}
+
+.about-image{
+  height: 580px;
+  width: 580px;
 }
 
 .product-image {
@@ -145,3 +169,5 @@ i:hover{
   font-size: 20px;
   font-weight: 300;
 }
+
+
