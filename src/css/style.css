@@ -118,6 +118,29 @@ i:hover{
   padding: 2rem 0 2rem 0;
 }
 
+.advantages {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 15rem;
+}
+
+.advantage-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.advantage-description {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.advantage-icon {
+  font-size: 4rem;
+}
+
 .three-columns {
   display: flex;
   width: 80%;
@@ -169,5 +192,4 @@ i:hover{
   font-size: 20px;
   font-weight: 300;
 }
-
 
