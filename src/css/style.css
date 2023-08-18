@@ -56,6 +56,10 @@ header .menu a:hover {
   color: #808080;
 }
 
+.home {
+  margin-bottom: 5rem;
+}
+
 .swiper {
   width: 1214px;
   height: 440px;
@@ -67,6 +71,10 @@ header .menu a:hover {
 
 .swiper .swiper-button-next {
   color: #000;
+}
+
+.swiper .swiper-slide {
+  text-align: center;
 }
 
 i{
