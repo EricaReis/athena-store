@@ -1,31 +1,71 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Athena Store</title>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/5012535a40.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
-</head>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/5012535a40.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-      <header>
-            <img src="./assets/logo.png" alt="logo" />
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="logo" />
 
-            <div class="menu">
-                  <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#store">Store</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#sale">PointOfSale</a></li>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                  </ul>
-            </div>
-      </header>
-</body>
+      <div class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#store">Store</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#sale">PointOfSale</a></li>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </ul>
+      </div>
+    </header>
+
+    <main id="home">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h1>New Clothing Collection</h1>
+
+            <button type="button">sdasd</button>
+
+            <img src="./assets/header.png" alt="logo" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/header2.png" alt="logo" />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
