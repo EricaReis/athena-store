@@ -193,3 +193,9 @@ i:hover{
   font-weight: 300;
 }
 
+
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
