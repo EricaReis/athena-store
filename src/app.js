@@ -1,12 +1,17 @@
+/* Populate New Arrivals section */
 $.ajax({
   url: 'https://fakestoreapi.com/products/category/jewelery',
-  // beforeSend: function (xhr) {
-  //   xhr.overrideMimeType('text/plain; charset=x-user-defined');
-  // },
 }).done(function (data) {
-  $("#img-5").attr('src', data[0].image);
-  $("#img-6").attr('src', data[1].image);
-  $("#img-7").attr('src', data[2].image);
+  for (var i = 0; i < data.length; i++) {
+    var item = data[i];
+    var imageId = $('#img-'+i);
+    var titleId = $('#title-'+i);
+    var priceId = $('#price-'+i);
+
+    $(imageId).attr('src', item.image);
+    $(titleId).text(item.title.substring(0, 50) + "...");
+    $(priceId).text('$'+item.price.toFixed(2));
+  }
 });
 
 const swiper = new Swiper('.swiper', {
@@ -18,5 +23,3 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-
