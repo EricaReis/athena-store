@@ -9,11 +9,12 @@ $.ajax({
     var priceId = $('#price-'+i);
 
     $(imageId).attr('src', item.image);
-    $(titleId).text(item.title.substring(0, 50) + "...");
+    $(titleId).text(item.title.substring(0, 30) + "...");
     $(priceId).text('$'+item.price.toFixed(2));
   }
 });
 
+/* Carousel Config */
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
