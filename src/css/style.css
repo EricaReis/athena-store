@@ -5,8 +5,18 @@
   box-sizing: border-box;
 }
 
+a {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
 ul {
   list-style-type: none;
+  gap: 1rem;
 }
 
 h1 {
@@ -43,15 +53,6 @@ header .menu ul {
   width: 100%;
 }
 
-header .menu a {
-  color: #000;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
 header .menu a:hover {
   color: #f08769;
 }
@@ -60,7 +61,7 @@ header .menu-mobile {
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   header .menu {
     display: none;
   }
@@ -112,6 +113,27 @@ header i:hover {
 .default-button:hover {
   color: #f08769;
   border: 4px solid #f08769;
+}
+
+.square-button {
+  border: none;
+  font-weight: 700;
+  padding: 0.8rem 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #fff;
+  background-color: #000;
+}
+
+.square-button:hover {
+  color: #f08769;
+}
+
+@media(max-width:  1024px){
+  .default-button {
+    padding: 0.5rem 2rem;
+  }
 }
 
 /* Swiper Carousel*/
@@ -359,7 +381,80 @@ header i:hover {
 
 /* Footer */
 .container-footer {
+  font-family: Roboto;
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  font-weight: 300;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: calc(25% - 10rem);
+  gap: 1rem;
+}
+
+.form-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: left;
+  font-weight: 500;
+}
+
+.form-field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid rgba(222, 215, 215, 0.41);;
+  outline: 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color:#C4C4C4;
+  }
+}
+
+.form-field:focus {
+  border-width: 3px;
+  border-image: linear-gradient(to right, #f08769, #C4C4C4);
+  border-image-slice: 1;
+}
+
+.social-media {
+  display: flex;
+  width: 50%;
+  align-self: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 940px) {
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-footer {
+    gap: 4rem;
+  }
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.copyright img {
+  max-width: 7rem;
 }
