@@ -130,6 +130,7 @@ header .menu-mobile {
   object-fit: cover;
 }
 
+/* New Arrivals */
 .new-arrivals {
   display: flex;
   flex-direction: column;
@@ -181,7 +182,7 @@ header .menu-mobile {
   }
 
   .card-container {
-    margin: 0 1rem 0 1rem;
+    margin: 2rem;
     grid-gap: 3rem;
   }
 }
@@ -207,12 +208,7 @@ header .menu-mobile {
   font-weight: 300;
 }
 
-.categories {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0 2rem 0;
-}
-
+/* Advantages */
 .advantages {
   display: flex;
   justify-content: center;
@@ -271,6 +267,15 @@ header .menu-mobile {
   position: absolute;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.overlay-card:hover {
+  transform: translateY(-0.5%);
+  opacity: 0.1;
+  background-color: #000;
+  color: white;
 }
 
 .overlay-title {
@@ -287,6 +292,47 @@ header .menu-mobile {
   .about-container {
     margin: 0 1rem 0 1rem;
     grid-gap: 3rem;
+  }
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 3rem 0;
+}
+
+.categories-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.category {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33% - 5rem);
+}
+
+.category-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 740px) {
+  .category {
+    width: 100%;
+  }
+
+  .categories-container {
+    grid-gap: 1rem;
+  }
+
+  .categories {
+    padding: 0 5rem 5rem 5rem;
   }
 }
 
