@@ -21,16 +21,6 @@ h2 {
   font-weight: 500;
 }
 
-i {
-  font-size: 1.3rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-i:hover {
-  color: #f08769;
-}
-
 header {
   display: flex;
   width: 100%;
@@ -92,6 +82,16 @@ header .menu-mobile {
   header .icon-mobile {
     font-size: 1rem;
   }
+}
+
+header i {
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header i:hover {
+  color: #f08769;
 }
 
 /* Button Style */
@@ -208,30 +208,6 @@ header .menu-mobile {
   font-weight: 300;
 }
 
-/* Advantages */
-.advantages {
-  display: flex;
-  justify-content: center;
-  padding: 6rem 15rem;
-}
-
-.advantage-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.advantage-description {
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.advantage-icon {
-  font-size: 4rem;
-}
-
 /* About Us */
 .about-us {
   display: flex;
@@ -333,6 +309,51 @@ header .menu-mobile {
 
   .categories {
     padding: 0 5rem 5rem 5rem;
+  }
+}
+
+/* Advantages */
+.advantages {
+  display: flex;
+  background-color: rgba(222, 215, 215, 0.41);
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.advantages-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  padding: 4rem 0 4rem 0;
+}
+
+.advantage-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.advantage-item:hover {
+  color: #f08769;
+}
+
+.advantage-icon {
+  font-size: 2rem;
+}
+
+@media (max-width: 740px) {
+  .advantages {
+    font-size: 0.8rem;
+  }
+
+  .advantages-container {
+    width: 100%;
   }
 }
 
