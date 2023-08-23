@@ -448,7 +448,7 @@ header i:hover {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: calc(25% - 10rem);
+  width: calc(25% - 5rem);
   gap: 1rem;
 }
 
@@ -501,10 +501,11 @@ footer i:hover {
   cursor: pointer;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1024px) {
   .footer-column {
     width: 100%;
     text-align: center;
+    min-height: 5rem;
   }
 
   .container-footer {
