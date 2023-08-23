@@ -19,7 +19,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 6000,
+    delay: 4000,
     disableOnInteraction: false
   },
 });
@@ -40,3 +40,28 @@ $.ajax({
     console.log(item)
   }
 });
+
+/* Set mobile header */
+if ((width < 1024) ) {
+  $("#swiper-image").each(function() {
+    $(this).attr("src", "./assets/mobile-banner0.png");
+  });
+}
+
+/* Verify screen size changes */
+var width = $(window).width();
+var height = $(window).height();
+
+$(window).resize(function(){
+  if($(window).width() < 1024) {
+   $("#swiper-image").each(function() {
+     $(this).attr("src", "./assets/mobile-banner0.png");
+               });
+           } else if ($(window).width() >= 1024) {
+               $("#swiper-image").each(function() {
+               $(this).attr("src","./assets/banner0.png");
+               });
+   }
+});
+
+

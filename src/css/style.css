@@ -161,6 +161,20 @@ header i:hover {
   object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .swiper-slide img {
+    height: 30rem;
+  }
+
+  .swiper-wrapper {
+    height: 30rem;
+  }
+
+  #slider {
+    height: 30rem;
+  }
+}
+
 /* New Arrivals */
 .new-arrivals {
   display: flex;
