@@ -56,9 +56,24 @@
       </nav>
 
       <div class="menu-mobile">
-        <i class="fa-solid fa-bars icon-mobile"></i>
         <i class="fa-solid fa-cart-shopping icon-mobile"></i>
+
+        <div class="btn-open-mobile">
+          <i class="fa-solid fa-bars icon-mobile"></i>
+        </div>
       </div>
+
+      <nav class="mobile-navbar">
+        <div class="btn-close-menu">
+          <i class="fa-solid fa-x"></i>
+        </div>
+
+        <ul>
+          <li><a class="link-menu" href="#store">Store</a></li>
+          <li><a class="link-menu" href="#about">About Us</a></li>
+          <li><a class="link-menu" href="#categories">Categories</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!--SwiperJS Carousel-->
@@ -66,22 +81,37 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img id="swiper-image0" class="swiper-image" src="./assets/banner0.png" alt="banner" />
+            <img
+              id="swiper-image0"
+              class="swiper-image"
+              src="./assets/banner0.png"
+              alt="banner"
+            />
           </div>
 
           <div class="swiper-slide">
-            <img id="swiper-image1" class="swiper-image" src="./assets/banner1.png" alt="banner" />
+            <img
+              id="swiper-image1"
+              class="swiper-image"
+              src="./assets/banner1.png"
+              alt="banner"
+            />
           </div>
 
           <div class="swiper-slide">
-            <img id="swiper-image2" class="swiper-image" src="./assets/banner2.png" alt="banner" />
+            <img
+              id="swiper-image2"
+              class="swiper-image"
+              src="./assets/banner2.png"
+              alt="banner"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <!-- New Arrivals -->
-    <section id='store' class="container new-arrivals">
+    <section id="store" class="container new-arrivals">
       <h2>NEW ARRIVALS IN JEWELERY</h2>
 
       <div class="container card-container">
@@ -140,7 +170,7 @@
     </section>
 
     <!-- About Us -->
-    <section id='about' class="container about-us">
+    <section id="about" class="container about-us">
       <div class="container about-container">
         <div class="about-card">
           <img class="about-image" src="./assets/about.png" alt="history" />
@@ -161,7 +191,7 @@
     </section>
 
     <!-- Categories -->
-    <section id='categories' class="container categories">
+    <section id="categories" class="container categories">
       <div class="container categories-container">
         <div class="category">
           <img
@@ -176,7 +206,11 @@
         </div>
 
         <div class="category">
-          <img class="category-image" src="./assets/eletronics-cover.png" alt="Eletronics" />
+          <img
+            class="category-image"
+            src="./assets/eletronics-cover.png"
+            alt="Eletronics"
+          />
 
           <div class="overlay-card">
             <p class="overlay-title">Eletronics</p>
@@ -302,7 +336,14 @@
           <div class="form-container">
             <p>Receive all our news and updates</p>
 
-            <input type="input" class="form-field" placeholder="Email Address" name="email" id='email' required />
+            <input
+              type="input"
+              class="form-field"
+              placeholder="Email Address"
+              name="email"
+              id="email"
+              required
+            />
 
             <button class="square-button" type="button">Subscribe Now</button>
           </div>
@@ -317,6 +358,6 @@
       </div>
     </footer>
 
-    <script src="./app.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

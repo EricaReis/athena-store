@@ -79,3 +79,23 @@ $(window).resize(function () {
     }
   }
 });
+
+/* Handle mobile header menu */
+$(document).ready(function() {
+  $('.btn-open-mobile').click(function () {
+      $('.mobile-navbar').addClass('open');
+      $("body").css('overflow','hidden');
+  });
+
+  $('.link-menu').click(function () {
+    $('.mobile-navbar').removeClass('open');
+    $("body").css('overflow','visible');
+  });
+
+  $('.btn-close-menu').click(function () {
+    $('.mobile-navbar').removeClass('open');
+    $("body").css('overflow','visible');
+  });
+});
+
+

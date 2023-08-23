@@ -10,11 +10,12 @@
   --secondary-color: #bfca94;
   --darken-color: #010101;
   --white: #fff;
-  --light-gray: #C4C4C4;
+  --light-straw: #c4baa6;
+  --light-gray: #c4c4c4;
 }
 
 a {
-  color: var(--darken-color) ;
+  color: var(--darken-color);
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
@@ -23,7 +24,7 @@ a {
 }
 
 a:hover {
-  color: var(--secondary-color) ;
+  color: var(--secondary-color);
 }
 
 ul {
@@ -139,18 +140,18 @@ header i:hover {
   color: var(--white);
 }
 
-@media(max-width:  1024px){
+@media (max-width: 1024px) {
   .default-button {
     padding: 0.5rem 2rem;
   }
 }
 
 /* Swiper Carousel*/
-.swiper-wrapper {
-  height: 40rem;
+.swiper {
+  max-height: 40rem;
 }
 
-#slider {
+.swiper-wrapper {
   height: 40rem;
 }
 
@@ -162,6 +163,10 @@ header i:hover {
 }
 
 @media (max-width: 1024px) {
+  .swiper {
+    max-height: 30rem;
+  }
+
   .swiper-slide img {
     height: 30rem;
   }
@@ -206,12 +211,13 @@ header i:hover {
   transition: 0.2s;
   cursor: pointer;
   color: var(--darken-color);
-  box-shadow: 0 0 0 2px var(--secondary-color), 8px 8px 0 0 var(--secondary-color);;
+  box-shadow: 0 0 0 2px var(--secondary-color),
+    8px 8px 0 0 var(--secondary-color);
 }
 
 .card:hover {
   transform: translateY(-0.5%);
-  box-shadow: 0 0 0 2px var(--darker-color), 8px 8px 0 0 var(--darker-color);;
+  box-shadow: 0 0 0 2px var(--darker-color), 8px 8px 0 0 var(--darker-color);
 }
 
 .image-container {
@@ -297,14 +303,14 @@ header i:hover {
   transition: 0.3s;
   cursor: pointer;
   background-color: var(--darken-color);
-  opacity:0.5;
+  opacity: 0.5;
   color: var(--white);
 }
 
 .overlay-card:hover {
   transform: translateY(-0.5%);
   background-color: var(--darken-color);
-  opacity:0.7;
+  opacity: 0.7;
 }
 
 .overlay-title {
@@ -454,7 +460,11 @@ header i:hover {
 
 .form-field:focus {
   border-width: 3px;
-  border-image: linear-gradient(to right, var(--main-color), var(--light-gray));
+  border-image: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--light-straw)
+  );
   border-image-slice: 1;
 }
 
@@ -499,3 +509,44 @@ footer i:hover {
 .copyright img {
   max-width: 7rem;
 }
+
+/* Mobile Menu */
+
+.mobile-navbar {
+  position: absolute;
+  display: flex;
+  width: 85%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: -150%;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s;
+  align-items: center;
+
+  &.open {
+    background-color: var(--white);
+    overflow: none;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+}
+
+.mobile-navbar ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.btn-close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+}
+
