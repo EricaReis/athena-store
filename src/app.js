@@ -4,13 +4,13 @@ $.ajax({
 }).done(function (data) {
   for (var i = 0; i < data.length; i++) {
     var item = data[i];
-    var imageId = $('#img-'+i);
-    var titleId = $('#title-'+i);
-    var priceId = $('#price-'+i);
+    var imageId = $('#img-' + i);
+    var titleId = $('#title-' + i);
+    var priceId = $('#price-' + i);
 
     $(imageId).attr('src', item.image);
-    $(titleId).text(item.title.substring(0, 30) + "...");
-    $(priceId).text('$'+item.price.toFixed(2));
+    $(titleId).text(item.title.substring(0, 30) + '...');
+    $(priceId).text('$' + item.price.toFixed(2));
   }
 });
 
@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   autoplay: {
     delay: 4000,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
 });
 
@@ -30,38 +30,41 @@ $.ajax({
 }).done(function (data) {
   for (var i = 0; i < data.length; i++) {
     var item = data[i];
-    var imageId = $('#eletronic-img-'+i);
-    var titleId = $('#eletronic-title-'+i);
-    var priceId = $('#eletronic-price-'+i);
+    var imageId = $('#eletronic-img-' + i);
+    var titleId = $('#eletronic-title-' + i);
+    var priceId = $('#eletronic-price-' + i);
 
     $(imageId).attr('src', item.image);
-    $(titleId).text(item.title.substring(0, 30) + "...");
-    $(priceId).text('$'+item.price.toFixed(2));
-    console.log(item)
+    $(titleId).text(item.title.substring(0, 30) + '...');
+    $(priceId).text('$' + item.price.toFixed(2));
   }
 });
 
 /* Set mobile header */
-if ((width < 1024) ) {
-  $("#swiper-image").each(function() {
-    $(this).attr("src", "./assets/mobile-banner0.png");
-  });
-}
-
-/* Verify screen size changes */
 var width = $(window).width();
 var height = $(window).height();
 
-$(window).resize(function(){
-  if($(window).width() < 1024) {
-   $("#swiper-image").each(function() {
-     $(this).attr("src", "./assets/mobile-banner0.png");
-               });
-           } else if ($(window).width() >= 1024) {
-               $("#swiper-image").each(function() {
-               $(this).attr("src","./assets/banner0.png");
-               });
-   }
+if (width < 1024) {
+  for (var i = 0; i <= 2; i++) {
+    var mobileBannerId = $('#swiper-image'+i)
+
+    $(mobileBannerId).attr('src', './assets/'+'mobile-banner'+i+'.png');
+  }
+}
+
+/* Verify screen size changes */
+$(window).resize(function () {
+  if ($(window).width() < 1024) {
+    for (var i = 0; i <= 2; i++) {
+      var mobileBannerId = $('#swiper-image'+i)
+
+      $(mobileBannerId).attr('src', './assets/'+'mobile-banner'+i+'.png');
+    }
+  } else if ($(window).width() >= 1024) {
+    for (var i = 0; i <= 2; i++) {
+      var bannerId = $('#swiper-image'+i);
+
+      $(bannerId).attr('src', './assets/'+'banner'+i+'.png');
+    }
+  }
 });
-
-
