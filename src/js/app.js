@@ -11,6 +11,7 @@ $.ajax({
     $(imageId).attr('src', item.image);
     $(titleId).text(item.title.substring(0, 30) + '...');
     $(priceId).text('$' + item.price.toFixed(2));
+    $(".loader-jewelry").css('display','none');
   }
 });
 
@@ -48,6 +49,7 @@ $.ajax({
     $(imageId).attr('src', item.image);
     $(titleId).text(item.title.substring(0, 30) + '...');
     $(priceId).text('$' + item.price.toFixed(2));
+    $(".loader-eletronics").css('display','none');
   }
 });
 
@@ -97,5 +99,3 @@ $(document).ready(function() {
     $("body").css('overflow','visible');
   });
 });
-
-
