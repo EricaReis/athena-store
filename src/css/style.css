@@ -207,7 +207,7 @@ header i:hover {
   background-color: var(--white);
   border-radius: 20px;
   max-width: 25rem;
-  width: calc(33.33% - 5rem);
+  width: calc(25% - 5rem);
   transition: 0.2s;
   cursor: pointer;
   color: var(--darken-color);
@@ -276,8 +276,12 @@ header i:hover {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* About Us */
@@ -565,4 +569,3 @@ footer i:hover {
   display: flex;
   flex-wrap: wrap;
 }
-

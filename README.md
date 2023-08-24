@@ -1,5 +1,5 @@
 # athena-store
-A fake store built with basic JS and JQuery structure
+A fake store built with basic JS, HTML, CSS and JQuery structure
 
 ## Getting Started
 
@@ -15,9 +15,11 @@ Run index.html
 
 The following tools were used in the development of the ComiXtore application:
 
-- [JQuery]([https://pt-br.reactjs.org/](https://jquery.com/))
+- [JQuery]([https://jquery.com/](https://jquery.com/))
 
-## Deployed at: [[deploy link]] 
+- [JavaScript]([https://www.javascript.com/](https://www.javascript.com/))
+
+## Deployed at: [[deploy link]]
 
 ## Developer
 
