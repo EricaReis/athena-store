@@ -3,7 +3,7 @@ A fake store built with basic JS, HTML, CSS and JQuery structure
 
 ## Getting Started
 
-To run the app you can access [[deploy link]] or follow the steps below:
+To run the app you can access [Deploy](https://athena-store.netlify.app/) or follow the steps below:
 
 First, clone the project:
 
@@ -13,13 +13,13 @@ Run index.html
 
 ## Technology
 
-The following tools were used in the development of the ComiXtore application:
+The following tools were used in the development of the ATHENA application:
 
 - [JQuery]([https://jquery.com/](https://jquery.com/))
 
 - [JavaScript]([https://www.javascript.com/](https://www.javascript.com/))
 
-## Deployed at: [[deploy link]]
+## Deployed at:  [Deploy](https://athena-store.netlify.app/)
 
 ## Developer
 
